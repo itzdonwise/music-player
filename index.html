@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="music-bg-main">
+        <h1>Duramix- amicablez</h1>
+        <div class="music--container">
+            <div class="top-icons">
+                <button  style="background: none; border: none; color: white;"> <i class="ri-arrow-left-s-line"></i></button>
+                <button id="show-song-list"> <i class="ri-play-list-fill"></i></button>
+            </div>
+
+            <div class="music-detail">
+                <div class="music-img">
+                    <img src="/img/ai-generated-studio-shot-of-black-headphones-over-music-note-explosion-background-with-empty-space-for-text-photo.jpg"
+                        alt="">
+                </div>
+
+                <div>
+                    <h2 id="song-title">Select a Song</h2>
+                    <p id="artist-name">-</p>
+                </div>
+
+
+
+              
+    <select id="song-selector" >
+         <option value=""> select song</option>
+        <option value="/img/51421pjwka_my-heart-will-go-on-trax-1.mp3" data-title="_my-heart-will-go-on" data-artist="celine dion">_my-heart-will-go-on</option>
+        <option value="/img/Elevation_Worship_-_Make_A_Way_CeeNaija.com_.mp3" data-title="Song 2" data-artist="Elevation_Worship_">Elevation_Worship_-_Make_A_Way_CeeNaija.</option>
+        <option value="/img/Minister-GUC-Eyes-On-Jesus-Gospelrella.com_.mp3" data-title="Minister-GUC-Eyes-On-Jesus-Gospelrella" data-artist="Minister-GUC">Minister-GUC-Eyes-On-Jesus-Gospelrella</option>
+        <option value="/img/Khaid_-_Jara.mp3" data-title="Khaid_-_Jara" data-artist="Dj-Khaid_-">Khaid_-_Jara</option>
+        <option value="/img/Rema_-_Mara.mp3" data-title="Rema_-_Mara" data-artist="Rema_-">Rema_-_Mara</option>
+        <option value="/img/Vsagz-Sunrise-ft-Kaptain-Parpae-(JustNaija.com) copy.mp3" data-title="Vsagz-Sunrise-ft-Kaptain-Parpae-(JustNaija.com)" data-artist="Vsagz-Sunrise-ft-Kaptain">Vsagz-Sunrise-ft-Kaptain-Parpae-(JustNaija.com)</option>
+        <option value="/img/Minister-GUC-Eyes-On-Jesus-Gospelrella.com_.mp3" data-title="Minister-GUC-Eyes-On-Jesus-Gospelrella" data-artist="min-Guc">Song 3</option>
+        <option value="/img/Minister-GUC-Eyes-On-Jesus-Gospelrella.com_.mp3" data-title="Minister-GUC-Eyes-On-Jesus-Gospelrella" data-artist="min-Guc">Song 3</option>
+    </select>
+
+                <audio id="song">
+                    <source src="" type="audio/mpeg">
+                </audio>
+
+                <div class="play-controls">
+                    <div><i class="ri-skip-back-mini-fill"></i></div>
+                    <div onclick="handleplay()"> <i class="ri-play-fill" id="contols"></i></div>
+                    <div><i class="ri-skip-right-fill"></i>
+                    </div>
+
+                </div>
+
+                <input type="range" value="0" id="progress">
+            </div>
+
+
+        </div>
+
+    </div>
+
+   <script  src="index.js"></script>
+
+</body>
+
+</html>
